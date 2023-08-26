@@ -33,7 +33,7 @@ jobs:
                 pip install -r requirements.txt
 
             - name: Run Setuptools
-              run: python ./setup.py
+              run: pip install -e .
             
             - name: Test App Code
               run: pytest ./tests
